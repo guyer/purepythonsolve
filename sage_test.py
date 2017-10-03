@@ -12,7 +12,7 @@ from sage_interface import *
 import numpy as np
 np.set_printoptions(threshold=np.inf)
 
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 import time
 
