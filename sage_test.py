@@ -83,7 +83,7 @@ start_time = time.time()
 sage_output_03 = execfile(filename1)
 stop_time = time.time()
 
-print("Seconds for execution of the script by SageMathCell = %s" % (stop_time-start_time))
+print("Seconds for execution of the script by local numpy = %s" % (stop_time-start_time))
 
 
 
