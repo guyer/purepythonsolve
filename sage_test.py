@@ -85,3 +85,18 @@ stop_time = time.time()
 
 print("Seconds for execution of the script by SageMathCell = %s" % (stop_time-start_time))
 
+
+
+
+### Example #4 with scipy.sparse:
+print('------------------------------')
+print("Example #4 with scipy.sparse:")
+
+filename1 = 'input_scipy.py'
+
+start_time = time.time()
+sage_output_04 = execfile(filename1)
+stop_time = time.time()
+
+print("Seconds for execution of the script by scipy.sparse = %s" % (stop_time-start_time))
+
