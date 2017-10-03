@@ -19,5 +19,5 @@ b = (maior-minor)*np.random.rand(n)+minor
 
 x = np.linalg.solve(a, b)
 
-print(x)
+# print(x)
 
