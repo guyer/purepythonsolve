@@ -10,13 +10,15 @@ n = 10000
 maior = 100
 minor = -100
 
-a = sp.csr_matrix((n, n))
+a = sp.lil_matrix((n, n))
 
 i = np.arange(n)
 j = np.arange(n)
 a.setdiag((maior-minor)*np.random.rand(n)+minor, k=0)
 a.setdiag((maior-minor)*np.random.rand(n)+minor, k=1)
 a.setdiag((maior-minor)*np.random.rand(n)+minor, k=-1)
+
+a = a.tocsr()
 
 b = (maior-minor)*np.random.rand(n)+minor
 
